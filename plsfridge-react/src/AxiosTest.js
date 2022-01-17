@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './App.css';
 import customAxios from './customAxios';
 
 // 기존의 App.js에 있던 파일
