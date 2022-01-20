@@ -2,9 +2,9 @@ import React from "react";
 
 function Admin_Page () {
   return (
-   <>
-       <div>관리자 페이지</div>
-   </>
+    <div>
+      <h1>관리자 페이지</h1>
+    </div>
   );
 };
 

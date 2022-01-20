@@ -1,18 +1,19 @@
-import { Routes ,Route } from "react-router-dom";
+import React, { Component } from "react";
+import { Switch, Route } from 'react-router-dom';
 import "./App.css";
-import Account_Management from './SH.Ingredients/Account_Management';
-import Todays_Recipes from './SH. MakingFood/Todays_Recipes';
-import Admin_Page from './SH.Admin/Admin_Page';
-import customAxios from './customAxios';
+import Account_Management from './Ingredients/Account_Management';
+import Todays_Recipes from './MakingFood/Todays_Recipes';
+import Admin_Page from './Admin/Admin_Page';
+
 
 function App() {
   return (
     <div className="App">
-      <Routes>
-        <Route exact={true} path="/Account_Management" element={<Account_Management />} />
-        <Route exact={true} path="/Todays_Recipes" element={<Todays_Recipes />} />
-        <Route exact={true} path="/Admin_Page" element={<Admin_Page />} />
-      </Routes>
+      <Switch>
+        <Route path="/Ingredients/Account_Management" component={Account_Management} />
+        <Route path="/MakingFood/Todays_Recipes" component={Todays_Recipes} />
+        <Route path="/Admin/Admin_Page" component={Admin_Page} />
+      </Switch>
     </div>
   );
 }
