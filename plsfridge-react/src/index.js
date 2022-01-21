@@ -9,10 +9,6 @@ ReactDOM.render(
 
 
 
-
-
-
-
 // 메인 페이지를 통해 Axios 연결
 /*
 import reportWebVitals from './reportWebVitals';

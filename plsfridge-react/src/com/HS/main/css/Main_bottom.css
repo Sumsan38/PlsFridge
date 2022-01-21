@@ -1,0 +1,13 @@
+.bottom-body {
+    position: fixed;    /* 스크롤이 있다 하더라도 고정된 위치 */
+    bottom: 1%;         /* 바닥 위치에서 얼마나 떨어트릴지 */
+    left: 1%;           /* 왼쪽 위치에서 얼마나 떨어트릴지 */
+    right: 1%;          /* 오른쪽 위치에서 얼마나 떨어트릴지 */
+
+    height: 5%;         /* 세로 폭이 얼마나 되는지 */
+
+    background-color: green;
+    font-weight: bold;  /* 상속된 값보다 굵은 굵기 */
+
+    text-align: center; /* 가운데 정렬 */
+}
