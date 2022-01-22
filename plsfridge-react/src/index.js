@@ -1,10 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App'; // Test용 빈 페이지
+import { BrowserRouter } from "react-router-dom";
+import Main_top from './Main_top'
+import Main_bottom from './Main_bottom'
+export { default as MyPage } from './my/MyPage';
+export { default as TodayReceipt } from './receipt/TodayReceipt';
 
 ReactDOM.render(
-    <App message="Hello Props Message"/>,
-    document.getElementById('root')
+   <React.StrictMode>
+       <BrowserRouter>
+           <Main_bottom />
+           <Main_top/ >
+       </BrowserRouter>
+   </React.StrictMode>,
+   document.getElementById('root')
 );
 
 
