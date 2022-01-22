@@ -1,19 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from "react-router-dom";
-import Main_top from './Main_top'
-import Main_bottom from './Main_bottom'
-export { default as MyPage } from './my/MyPage';
-export { default as TodayReceipt } from './receipt/TodayReceipt';
+import Root from './Root';
 
 ReactDOM.render(
-   <React.StrictMode>
-       <BrowserRouter>
-           <Main_bottom />
-           <Main_top/ >
-       </BrowserRouter>
-   </React.StrictMode>,
-   document.getElementById('root')
+   <Root />, document.getElementById('root')
 );
 
 
