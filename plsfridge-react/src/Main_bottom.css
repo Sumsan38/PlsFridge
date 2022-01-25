@@ -4,7 +4,8 @@
     left: 1%;           /* 왼쪽 위치에서 얼마나 떨어트릴지 */
     right: 1%;          /* 오른쪽 위치에서 얼마나 떨어트릴지 */
 
-    height: 5%;         /* 세로 폭이 얼마나 되는지 */
+    /*height: 5%;*/         /* 세로 폭이 얼마나 되는지 */
+    height: 10%;         /* 세로 폭이 얼마나 되는지 */
 
     background-color: green;
     font-weight: bold;  /* 상속된 값보다 굵은 굵기 */
