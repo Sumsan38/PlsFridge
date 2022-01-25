@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import customAxios from './customAxios';
 
+// 기존의 App.js에 있던 파일
+// String Boot와 연결 테스트
 function App() {
   // IP주소 변수 선언
   const [ip, setIp] = useState('');
