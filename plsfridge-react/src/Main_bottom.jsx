@@ -17,11 +17,10 @@ class Main_bottom extends Component {
     /* onClick - 마우스 클릭 이벤트 */
 
     render() {
-        const { isMyHovered, isCookHovered } = this.state; // this는 constructor
+        let { isMyHovered, isCookHovered } = this.state; // this는 constructor
 
         return (
-        <div>
-            <nav className = "bottom-body">
+        <div className = "bottom-body">
                 <div
                     onMouseEnter = {() => this.setState({ isMyHovered: !isMyHovered }) }
                     onMouseLeave = {() => this.setState({ isMyHovered: !isMyHovered }) }
@@ -51,7 +50,7 @@ class Main_bottom extends Component {
                     {isCookHovered &&
                         <ul>
                         {
-                            cookList.map((list, index) =>
+                            cookList.map(function (list, index)
                                 {
                                     return (
                                         <li key={index}>
@@ -64,7 +63,6 @@ class Main_bottom extends Component {
                         </ul>
                     }
                 </div>
-            </nav>
         </div>
         );
     }
@@ -73,6 +71,7 @@ export default Main_bottom;
 
 const baseMyUrl = '/My/';
 const baseCookUrl = '/receipt/';
+/* 배열 선언 방법 [{}, {}] */
 const myList = [
     {
         link: `${baseMyUrl}MyPage`, // 1번 앞에 있는 작은 따옴표다
