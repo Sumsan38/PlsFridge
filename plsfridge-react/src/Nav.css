@@ -1,0 +1,30 @@
+.menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+}
+
+.category {
+  overflow: hidden;
+  text-align: center;
+  width: 33%;
+  float: left;
+}
+
+.CloseBox {
+  position:relative;
+  width: 75%;
+  padding-left: 50%;
+  top: -100px;
+  z-index:0;
+}
+
+a {
+  color: black;
+  line-height: 1.5;
+  font-size: 18px;
+  letter-spacing: normal;
+}
+
