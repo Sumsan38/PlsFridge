@@ -23,13 +23,13 @@ class Menu extends Component {
           {/* 마우스 위치에 따라 true, false값 반환 */}
         <div
           className="category wrapBox"
-          onMouseEnter={() => this.setState({ isIngredientsHovered: !isIngredientsHovered })}
-          onMouseLeave={() => this.setState({ isIngredientsHovered: !isIngredientsHovered })}
+          onMouseEnter={() => this.setState({ isIngredientsHovered: true })}
+          onMouseLeave={() => this.setState({ isIngredientsHovered: true })}
         >
           <Link to="#">마이페이지</Link>
           {/* 밑에서 만든 링크, 이름으로 하위메뉴 생성 */}
           {isIngredientsHovered && (
-            <ul className="shopCloseBox">
+            <ul className="CloseBox">
               {IngredientsList.map((list, index) => {
                 return (
                   <li className="shopClose" key={index}>
@@ -52,7 +52,7 @@ class Menu extends Component {
         >
           <Link to="#">음식만들기</Link>
           {isMakingFoodHovered && (
-            <ul className="aboutCloseBox">
+            <ul className="CloseBox">
               {MakingFoodList.map((list, index) => {
                 return (
                   <li className="shopClose" key={index}>
@@ -74,7 +74,7 @@ class Menu extends Component {
         >
           <Link to="#">관리자페이지</Link>
           {isAdminHovered && (
-            <ul className="aboutCloseBox">
+            <ul className="CloseBox">
               {AdminList.map((list, index) => {
                 return (
                   <li className="shopClose" key={index}>
