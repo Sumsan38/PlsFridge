@@ -12,10 +12,14 @@
 
     text-align: center; /* 가운데 정렬 */
 }
-nav > div {
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+.bottom-body > div {
     text-align: center;
     float: left;
-    width: 50%;
-
-    /* 세로길이 설정 */
+    width: 50%; /* 세로길이 설정 메뉴 갯수 받아서 해야할 듯 */
 }
+/* z-index를 사용하여 최상위로 올릴 수 있다 */
